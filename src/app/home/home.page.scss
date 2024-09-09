@@ -1,0 +1,41 @@
+ion-content {
+  --background: none;
+  background-size: cover;
+background-position: center center;
+}
+
+.user-icon-row {
+  justify-content: center;
+position: relative;
+top: 30px; /* Ajusta la altura del icono según sea necesario */
+z-index: 10; /* Asegura que el icono esté por encima del ion-card */
+}
+
+.user-avatar-icon {
+font-size: 100px; /* Ajusta el tamaño del icono */
+color: #000000; /* Puedes cambiar el color si es necesario */
+border-radius: 50%;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+ion-card {
+  background-color: #ffffff;
+border-radius: 20px;
+padding-top: 3px; /* Añade espacio para que el icono no cubra el contenido */
+margin-top: 30px; /* Mueve el ion-card hacia arriba para alinearlo con el icono */
+}
+
+.container-login {
+width: 90%;
+padding: 10px;
+border-radius: 5px;
+}
+
+ion-icon {
+margin-right: 15px;
+}
+
+ion-button {
+margin-top: 5px;
+margin-bottom: 15px;
+}

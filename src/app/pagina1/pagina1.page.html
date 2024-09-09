@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="background-color: #f0f4f7;">
+  <div class="login-container">
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title>Bienvenido de nuevo</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form (ngSubmit)="onSubmit()">
+          <ion-list>
+            <ion-item>
+              <ion-icon name="mail-outline" slot="start"></ion-icon>
+              <ion-input [(ngModel)]="correo" placeholder="Correo" type="email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+              <ion-input [(ngModel)]="clave" placeholder="Contraseña" type="password" required></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <ion-button expand="block" type="submit" class="ion-margin-top" color="primary">Iniciar Sesión</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

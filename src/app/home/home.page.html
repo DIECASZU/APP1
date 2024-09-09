@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Icono de usuario -->
+  <ion-grid>
+    <ion-row class="user-icon-row" justify-content="center">
+      <ion-col class="user-icon-col" size="auto">
+        <ion-icon name="person-circle-outline" class="user-avatar-icon"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Formulario de inicio de sesión -->
+  <ion-card>
+    <div class="container-login">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h1>Iniciar Sesión</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-icon name="mail-outline" class="email-login"></ion-icon>
+                <ion-input [(ngModel)]="correo" label="Correo" labelPlacement="floating" placeholder="tucorreo@tudominio.cl" type="email"></ion-input>
+              </ion-item>
+              <br />
+              <ion-item>
+                <ion-icon name="lock-closed-outline" class="icon-login"></ion-icon>
+                <ion-input label="Contraseña" [(ngModel)]="clave" labelPlacement="floating" placeholder="Enter text"type="password"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" (click)="PasarDatos()" [routerLink]="['/pagina2'] ">Enviar</ion-button>
+            <ion-button expand="block" [routerLink]="['/pagina1'] ">Registrarse</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>
+              <h3>¿Olvido la contraseña?</h3>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+ </ion-card>
+</ion-content>
